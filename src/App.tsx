@@ -2,25 +2,39 @@ import './App.css'
 import { NavBar } from './components/NavBar.tsx'
 import { Search } from './components/Search.tsx'
 
-import { useEffect } from 'react'
-import { useApiBooks } from './components/hooks/useApiBooks.tsx'
+import { useEffect, useRef, useState } from 'react'
+import { useApiBooks } from './hooks/useApiBooks.tsx'
+import { ShowBooks } from './components/Books.tsx'
 
-import { type TitleProp } from './types.ts'
 
 function App() {
-  const {data,error,loading, getData} = useApiBooks()
 
+  const {books, setBooks, error, loading, getData} = useApiBooks()
+  const searchInput = useRef<HTMLInputElement>(null)
+  const [errorInput,  setErrorInput] = useState<string>()
 
-  useEffect(() => {
+  useEffect( ()  => {
     getData('http://localhost:5000/books/all')
-
+    
   }, [])
   
-  const handleSearch = (title: string) => {
-    getData(`http://localhost:5000/books?search=${title.trim()}`)
-    console.log(data);
-    
+  const handleSearch = async (title: string) => {
+    const inputValue = searchInput.current?.value.trim()
+
+    if(!inputValue){
+      setErrorInput('Please write a book name')
+      setTimeout(() => {
+        setErrorInput('')
+      }, 2000);
+      getData(`http://localhost:5000/books/all`)
+      return
+    }
+
+    getData(`http://localhost:5000/books?search=${title}`)
   }
+
+
+
 
   return (
       
@@ -30,8 +44,18 @@ function App() {
         <NavBar />
       </nav>
       <section className='bg-black  border-amber-600 w-full rounded-4xl h-[99vh] m-4'>
-      <Search handleSearch={handleSearch}/>
-      
+      <Search handleSearch={handleSearch} searchRef={searchInput}/>
+
+        {loading == true ? <p className='text-white'>Loading...</p>: ''}
+        {error && <p className='text-white'>{error}</p>}
+
+
+
+      {errorInput && <p className='text-white'>{errorInput}</p>}
+        <div className='mt-4'>
+        <ShowBooks books={books} />
+
+        </div>
       </section>
     </div>
   )
