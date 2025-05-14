@@ -1,0 +1,113 @@
+[
+{
+  "title": "1984",
+  "author": "George Orwell",
+  "thumbnail": "https://m.media-amazon.com/images/I/71kxa1-0mfL._AC_UF1000,1000_QL80_.jpg",
+  "description": "A dystopian novel set in a totalitarian society ruled by Big Brother, exploring themes of surveillance, censorship, and the loss of individuality.",
+  "price": 12.49,
+  "rating": 4.7,
+  "stock": 50,
+  "category": "Dystopian Fiction"
+},
+{
+  "title": "Eat That Frog!",
+  "author": "Brian Tracy",
+  "thumbnail": "https://m.media-amazon.com/images/I/81bGKUa1e0L._AC_UF1000,1000_QL80_.jpg",
+  "description": "A productivity guide offering 21 practical steps to stop procrastinating and get more done by tackling the most important tasks first.",
+  "price": 10.99,
+  "rating": 4.6,
+  "stock": 35,
+  "category": "Self-Help"
+},
+  {
+    "title": "Demian",
+    "author": "Hermann Hesse",
+    "thumbnail": "https://auladefilosofia.net/wp-content/uploads/2012/04/hh.jpg",
+    "description": "A coming-of-age novel that explores duality, identity, and the inner spiritual journey of a young man guided by a mysterious figure named Demian.",
+    "price": 11.99,
+    "rating": 4.4,
+    "stock": 20,
+    "category": "Literary Fiction"
+  },
+  {
+    "title": "Dopamine Nation",
+    "author": "Anna Lembke",
+    "thumbnail": "https://m.media-amazon.com/images/I/91zk9rdOJFL._UF1000,1000_QL80_.jpg",
+    "description": "An exploration of addiction, pleasure, and pain in modern society, offering insights on how to find balance in a dopamine-saturated world.",
+    "price": 16.49,
+    "rating": 4.7,
+    "stock": 40,
+    "category": "Psychology"
+  },
+  {
+    "title": "Sapiens",
+    "author": "Yuval Noah Harari",
+    "thumbnail": "https://m.media-amazon.com/images/I/713jIoMO3UL._AC_UF1000,1000_QL80_.jpg",
+    "description": "A brief history of humankind, tracing the evolution of Homo sapiens from the Stone Age to the modern era.",
+    "price": 18.00,
+    "rating": 4.8,
+    "stock": 25,
+    "category": "History"
+  },
+  {
+    "title": "Why We Sleep",
+    "author": "Matthew Walker",
+    "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5ueZIeVtZfzcBTdyvBJb3tuZP9WzoBFLcgqCJC_qqvzhwD93n_mSaBjEPxN1j9PtbXMU&usqp=CAU",
+    "description": "A comprehensive examination of the science of sleep and its critical role in physical and mental health.",
+    "price": 15.75,
+    "rating": 4.7,
+    "stock": 30,
+    "category": "Science"
+  },
+  {
+    "title": "Atomic Habits",
+    "author": "James Clear",
+    "thumbnail": "https://m.media-amazon.com/images/I/91bYsX41DVL._AC_UF1000,1000_QL80_.jpg",
+    "description": "A proven framework for building good habits and breaking bad ones through small daily improvements.",
+    "price": 17.99,
+    "rating": 4.9,
+    "stock": 45,
+    "category": "Self-Help"
+  },
+  {
+    "title": "The Bible",
+    "author": "Multiple Authors",
+    "thumbnail": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1631965680i/280111.jpg",
+    "description": "The sacred scriptures of Christianity, composed of the Old and New Testaments, encompassing history, poetry, prophecy, and moral teachings.",
+    "price": 9.99,
+    "rating": 4.9,
+    "stock": 100,
+    "category": "Religious"
+  },
+  {
+    "title": "The Charisma Myth",
+    "author": "Olivia Fox Cabane",
+    "thumbnail": "https://m.media-amazon.com/images/I/81hS0u0bqXL._AC_UF1000,1000_QL80_.jpg",
+    "description": "A guide to understanding and developing personal charisma using science-based techniques.",
+    "price": 13.49,
+    "rating": 4.5,
+    "stock": 38,
+    "category": "Self-Improvement"
+  },
+  {
+    "title": "The Girl on the Train",
+    "author": "Paula Hawkins",
+    "thumbnail": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1574805682l/22557272.jpg",
+    "description": "A psychological thriller centered on a woman who becomes entangled in a missing persons investigation after witnessing something suspicious during her commute.",
+    "price": 14.25,
+    "rating": 4.3,
+    "stock": 28,
+    "category": "Thriller"
+  },
+  {
+    "title": "The Alchemist",
+    "author": "Paulo Coelho",
+    "thumbnail": "https://m.media-amazon.com/images/I/71aFt4+OTOL._AC_UF1000,1000_QL80_.jpg",
+    "description": "A philosophical story about a shepherd named Santiago who dreams of finding a treasure and discovers deeper meaning and destiny along the way.",
+    "price": 13.99,
+    "rating": 4.8,
+    "stock": 60,
+    "category": "Fiction"
+  }
+
+]
