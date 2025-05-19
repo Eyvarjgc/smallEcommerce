@@ -37,24 +37,26 @@ function App() {
 
 
   return (
-      
-    <div className='flex  bg-black gap-8 m-auto '>
+    <div className='flex  bg-black gap-8 m-auto  flex-row  '>
 
-      <nav className='bg-black border-2 border-orange-700 p-2 w-1/12 rounded-4xl my-auto h-[99vh] m-4'>
+      <nav className=' border-2 border-orange-700  rounded-4xl
+       my-auto m-4 fixed h-[95%] p-8  inset-0 top-0 left-0 w-16 flex flex-col space-y-6 z-50 '>
         <NavBar />
-      </nav>
-      <section className='bg-black  border-amber-600 w-full rounded-4xl h-[99vh] m-4'>
-      <Search handleSearch={handleSearch} searchRef={searchInput}/>
+      </nav>r
 
-        {loading == true ? <p className='text-white'>Loading...</p>: ''}
-        {error && <p className='text-white'>{error}</p>}
+      
+      <section className='  border-amber-600  rounded-4xl m-4 min-h-screen ml-16 relative w-full  ' >
+          <Search handleSearch={handleSearch} searchRef={searchInput}/>
 
 
+      {loading == true ? <p className='text-white'>Loading...</p>: ''}
+      {error && <p className='text-white'>{error}</p>}
 
       {errorInput && <p className='text-white'>{errorInput}</p>}
-        <div className='mt-4'>
-        <ShowBooks books={books} />
-
+        
+        <div className=' text-white bg-orange-900 rounded-4xl p-4 min-h-screen mt-4
+          w-[95%]'>
+          <ShowBooks books={books} />
         </div>
       </section>
     </div>

@@ -1,3 +1,15 @@
 @import "tailwindcss";
 
+body{
+  width: 100dvw;
+  overflow-x: hidden;
+}
 
+
+@layer base{ }
+
+@layer utilities{
+  .absolute-center{
+    @apply min-h-screen  w-screen
+  }
+}
