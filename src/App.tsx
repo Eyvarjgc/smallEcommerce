@@ -1,21 +1,33 @@
 import './App.css'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
-import Home from './pages/Home'
-import { AppProvider } from './hooks/useContext'
+import { Layout } from './pages/Layout'
 import { ShowBooks } from './components/Books'
+import { useEffect } from 'react'
+import { useAppContext } from './hooks/useAppContext'
 
 function App() {
+  const {getData, books}  = useAppContext()
+  
+    useEffect( ()  => {
+      getData('http://localhost:5000/books/all')
+    
+  }, [])
+  
+
+
   return (
-  <AppProvider>
     <Router>
       <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/search' element={<ShowBooks />} />
+        <Route path='/' element={<Layout />} >
 
+        <Route index element={<ShowBooks books={books} />} />
+
+        <Route path='/:query' element={<ShowBooks  books={books} />} />
+
+        </Route>
       </Routes>
     </Router>
-  </AppProvider>
   )
 }
 

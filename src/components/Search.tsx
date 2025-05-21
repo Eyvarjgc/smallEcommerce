@@ -1,6 +1,6 @@
-import {   useState } from "react"
-
-
+import {   useEffect, useState } from "react"
+import { useNavigate } from "react-router"
+import { useParams } from "react-router"
 
 interface Props{
   handleSearch: ( title : string) => void
@@ -10,10 +10,25 @@ interface Props{
 export const Search : React.FC<Props> = ({handleSearch, searchRef}) => {
   const [valueSearched, setValueSearched] = useState<string>('')
 
+  const {query} = useParams()
+
+  // If user go back to main page, the input will be empty equal as query
+    useEffect(() => {
+      if(query === undefined){
+        setValueSearched('')
+        handleSearch('')
+      }
+
+    }, [query])
+
+
+  const navigate = useNavigate()
+
    const handleKeyEvent = (evt : React.KeyboardEvent<HTMLInputElement>) => {
+
     if(evt.key === 'Enter'){
       handleSearch(valueSearched)
-      
+      navigate(`/${valueSearched}`)
     }
     
    }

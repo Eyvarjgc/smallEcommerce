@@ -16,7 +16,6 @@ export const AppProvider : React.FC<{children: React.ReactNode}> = ({children}) 
     try {
       setLoading(true)
       const response = await GetApi(url) 
-      console.log(response);
       
       setBooks(response)
       setLoading(false)
