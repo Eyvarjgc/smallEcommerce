@@ -108,6 +108,86 @@
     "rating": 4.8,
     "stock": 60,
     "category": "Fiction"
+  },
+    {
+    "title": "The Witcher: The Last Wish",
+    "author": "Andrzej Sapkowski",
+    "thumbnail": "https://ellector.com.pa/cdn/shop/files/9780316452465.jpg?v=1705277662",
+    "description": "A collection of short stories introducing Geralt of Rivia, a monster hunter for hire in a world of magic, mystery, and moral ambiguity.",
+    "price": 14.99,
+    "rating": 4.7,
+    "stock": 35,
+    "category": "Fantasy"
+  },
+  {
+    "title": "Ikigai: The Japanese Secret to a Long and Happy Life",
+    "author": "Héctor García & Francesc Miralles",
+    "thumbnail": "https://m.media-amazon.com/images/I/71lJBs5MNlL.jpg",
+    "description": "Explores the Japanese concept of 'ikigai', or a reason for being, and how it can lead to a fulfilled and meaningful life.",
+    "price": 11.49,
+    "rating": 4.6,
+    "stock": 50,
+    "category": "Self-help"
+  },
+  {
+    "title": "The Call of Cthulhu",
+    "author": "H.P. Lovecraft",
+    "thumbnail": "https://m.media-amazon.com/images/I/619K0PYMh-L.jpg",
+    "description": "A chilling tale of cosmic horror and madness, following the investigation of an ancient cult that worships an alien god.",
+    "price": 9.99,
+    "rating": 4.5,
+    "stock": 40,
+    "category": "Horror"
+  },
+  {
+    "title": "Rich Dad Poor Dad",
+    "author": "Robert T. Kiyosaki",
+    "thumbnail": "https://m.media-amazon.com/images/I/81bsw6fnUiL._AC_UF1000,1000_QL80_.jpg",
+    "description": "A personal finance classic comparing two perspectives on money, investing, and wealth-building: one from his real dad and one from his friend's wealthy father.",
+    "price": 12.99,
+    "rating": 4.6,
+    "stock": 65,
+    "category": "Finance"
+  },
+  {
+    "title": "The Art of War",
+    "author": "Sun Tzu",
+    "thumbnail": "https://m.media-amazon.com/images/I/71MizulW5AL.jpg",
+    "description": "An ancient Chinese military treatise offering timeless strategies for warfare, leadership, and tactical thinking.",
+    "price": 7.99,
+    "rating": 4.4,
+    "stock": 80,
+    "category": "Philosophy"
+  },
+  {
+    "title": "The 48 Laws of Power",
+    "author": "Robert Greene",
+    "thumbnail": "https://m.media-amazon.com/images/I/61J3Uu4jOLL.jpg",
+    "description": "A powerful guide to manipulation, influence, and strategic thinking drawn from historical figures and political maneuvering.",
+    "price": 16.99,
+    "rating": 4.7,
+    "stock": 55,
+    "category": "Self-help"
+  },
+  {
+    "title": "The Adventures of Tom Sawyer",
+    "author": "Mark Twain",
+    "thumbnail": "https://ellector.com.pa/cdn/shop/products/6228dd26e6645dc1735a3eb7_9788418395871.jpg?v=1658362910",
+    "description": "A coming-of-age story about a mischievous boy growing up along the Mississippi River, full of humor and adventure.",
+    "price": 10.99,
+    "rating": 4.5,
+    "stock": 70,
+    "category": "Classic"
+  },
+  {
+    "title": "The Adventures of Robinson Crusoe",
+    "author": "Daniel Defoe",
+    "thumbnail": "https://m.media-amazon.com/images/M/MV5BN2RjZDIwM2QtN2YwNi00ZjEyLTg0ZjItMWFjNjEyYTE1NDYwXkEyXkFqcGc@._V1_.jpg",
+    "description": "The story of a castaway who survives for years on a remote island using ingenuity, resilience, and survival skills.",
+    "price": 9.49,
+    "rating": 4.4,
+    "stock": 60,
+    "category": "Adventure"
   }
 
 ]
